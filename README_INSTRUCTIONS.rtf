@@ -1,0 +1,43 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2709
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 INSTRUCTIONS\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+BEFORE RUNNING- PLEASE UPDATE THE JSON FILE path_vars.json PRIOR TO RUNNING THE FIRST TIME AND SPECIFY WHERE YOUR AUDIO RECORDINGS WILL BE LOCATED (they require .m4a currently but if you generally record in a different method we can fix that for future). (See other info part 2 for more info)\
+\
+TWO METHODS TO RUN:\
+\
+1. DOUBLE CLICK RUN_PROGRAM.sh\'97 should run everything for you, but may need some permissions with your Mac etc.\
+\
+2. See below manual code inputs to start running\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+GENERAL INSTRUCTIONS FOR MANUAL OPENING OF CODE (ALWAYS WORKS)\
+\
+1. Open terminal and navigate to the directory (cd\'85 path etc)\
+\
+2. Once terminal has correct path open then run the following code: \'93source .venv/bin/activate\'94\
+\
+3. This now will trigger the correct virtual environment python version when running whisper (all contained within the downloaded folder)\
+\
+4. Now run the following code to start the program: \'93python3 main.py\'94\
+\
+5. The model will load the model which takes some time then once it is loaded will instruct to ask if you\'92d like it to search for a new recording. If you are ready type \'93go\'94 and hit enter and it will run. At the end of the prompt it will print out the text and automatically copy to your clipboard so you can just hit Command+V to paste into note etc. \
+\
+The code will remain running in a terminal window waiting for you to type \'93go\'94 again and search for a new voice recording (it does this to save time so you don\'92t have to load the large model every time)\
+\
+Run as many times as you\'92d like!\
+\
+IF YOU WANT TO EXIT THE PROGRAM- TYPE CONTROL + C in the terminal window and it should exit\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+OTHER THINGS\
+1. There is a file called variables.json\'97 if you edit this you can change your presents that when you say something it will auto substitute. You have to be thoughtful because anytime you say that word it will auto substitute. There are a few presets I left in (ie. Next paragraph, start parenthesis, close parenthesis etc.) Feel free to add or change as many as you\'92d like\
+\
+2. In order for your computer to find your new voice recordings you need to have the voice recordings app open so they sync to your Mac automatically. Furthermore there is one other .json file that before you run the first time you need to update the file path to where your voice recordings auto populate when they sync to your Mac. The code will search this path for the last file created and use that to transcribe so its important this gets updated the first time you use.\
+\
+}
